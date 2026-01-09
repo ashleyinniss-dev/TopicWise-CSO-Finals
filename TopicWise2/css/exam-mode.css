@@ -1,0 +1,144 @@
+/* =========================
+   GLOBAL FONTS AND STUFF
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: #0b1220;
+  color: #e5e7eb;
+  overflow-x: hidden;
+}
+
+/* =========================
+   HEADER AND NAVBAR
+========================= */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  height: 42px;
+  width: auto;
+}
+
+.brand span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.exam-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #22d3ee; 
+}
+
+p {
+  text-align: center;
+  color: #94a3b8; 
+}
+
+.card {
+  background: #020617; 
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #1e293b; 
+  font-size: 15px;
+  background: #020617; 
+  color: #e5e7eb;      
+}
+
+.time-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #22d3ee; 
+  color: #020617;      
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #5850ec; 
+}
+
+#examArea {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#timerDisplay {
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #38bdf8; 
+}
+
+.hidden {
+  display: none;
+}

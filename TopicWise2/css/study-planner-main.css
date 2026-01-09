@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  color: #222;
+}
+
+.header {
+  padding: 20px;
+  background: #111827;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.subjects {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subject-card {
+  background: #111827;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.subject-card:hover {
+  transform: translateY(-2px);
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  height: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.progress {
+  background: #38bdf8;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.topics {
+  background:#111827;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.topics ul {
+  list-style: none;
+  padding: 0;
+}
+
+.topics li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.topics li:hover {
+  background: #f0f4ff;
+}
+
+.topics li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topics input[type="checkbox"] {
+  accent-color: #4f46e5; /* TopicWise purple */
+  cursor: pointer;
+}
+
+.topics span {
+  cursor: pointer;
+}
+
+.topics span.done {
+  text-decoration: line-through;
+  color: #9ca3af;
+}

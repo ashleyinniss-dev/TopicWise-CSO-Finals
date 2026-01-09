@@ -1,0 +1,177 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: #0b1220;
+  color: #e5e7eb;
+  overflow-x: hidden;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  height: 42px;
+  width: auto;
+}
+
+.brand span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+.resources-page {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* FILTERS */
+.filters {
+  width: 260px;
+  background: #0f172a;
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+
+.filters label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.filters select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  background:  rgba(15, 23, 42, 0.85);
+  color: rgba(15, 23, 42, 0.85);
+  border: 2px solid #070c3b;
+}
+
+/* RESOURCES */
+.resources {
+  flex: 1;
+}
+
+.resources h1 {
+  margin-bottom: 1.5rem;
+}
+
+#resourcesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+/* CARD */
+.resource-card {
+  background: #0f172a;
+  padding: 1.5rem;
+  border-radius: 14px;
+  transition: transform 0.25s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-6px);
+}
+
+.resource-card h3 {
+  margin-bottom: 8px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+
+.subject-tag {
+  background: #38bdf8;
+  color: rgb(255, 255, 255);
+}
+
+.type-tag {
+  background: #22c55e;
+  color: rgb(255, 255, 255);
+}
+
+.resource-card button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #38bdf8;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* =========================
+   OVERRIDE TEXT COLOR
+========================= */
+
+/* Change select dropdown text to white */
+.filters select {
+  color: #ffffff; /* white text */
+}
+
+/* Change any black text inside resource cards to white */
+.resource-card, 
+.resource-card h3,
+.resource-card p,
+.resource-card span {
+  color: #ffffff; /* white text */
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TopicWise | Study Planner</title>
+  <link rel="stylesheet" href="../css/study-planner.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="brand">
+    <img src="../Buttons/logo.jpg" alt="TopicWise logo">
+    <span>TopicWise</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="home-tab.html" class="active">Home</a>
+    <a href="study-planner.html"> Study Planner</a>
+    <a href="exam-mode.html">Exam Mode</a>
+    <a href="resources.html">Resources</a>
+
+   
+  </nav>
+</header>
+
+<div class="planner-app" id="plannerCapture">
+
+  <header class="planner-header">
+    <h1>Your Study Planner</h1>
+    <p>Drag subjects into your weekly schedule and set difficulty.</p>
+  </header>
+
+  <section class="planner-layout">
+
+    <!-- SUBJECT LIST -->
+    <aside class="subjects-panel">
+      <h2>Subjects</h2>
+      <div class="subjects-list" id="subjectsList">
+        <div class="subject-card" draggable="true">Additional Mathematics</div>
+        <div class="subject-card" draggable="true">Biology</div>
+        <div class="subject-card" draggable="true">Chemistry</div>
+        <div class="subject-card" draggable="true">Physics</div>
+        <div class="subject-card" draggable="true">English A</div>
+        <div class="subject-card" draggable="true">English B</div>
+        <div class="subject-card" draggable="true">Mathematics</div>
+        <div class="subject-card" draggable="true">Geography</div>
+        <div class="subject-card" draggable="true">Information Technology</div>
+        <div class="subject-card" draggable="true">Social Studies</div>
+      </div>
+    </aside>
+
+    <!-- CALENDAR -->
+    <main class="calendar-panel">
+      <div class="calendar-header">
+        <div>Monday</div><div>Tuesday</div><div>Wednesday</div>
+        <div>Thursday</div><div>Friday</div><div>Saturday</div><div>Sunday</div>
+      </div>
+
+      <div class="calendar-grid">
+        <!-- 4 WEEKS = 28 CELLS -->
+        <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+        <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+
+        <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+        <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+
+        <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+        <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+
+        <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+        <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+      </div>
+    </main>
+
+  </section>
+
+  <footer class="planner-footer">
+    <button id="saveBtn">Save Study Planner as Image</button>
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="../js/study-planner.js"></script>
+</body>
+</html>

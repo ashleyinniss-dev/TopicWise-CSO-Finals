@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resources | TopicWise</title>
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/resorces.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <img src="../buttons/logo.jpg" alt="TopicWise logo">
+    <span>TopicWise</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="home-tab.html">Home</a>
+    <a href="study-planner.html">Study Planner</a>
+    <a href="resources.html" class="active">Resources</a>
+    <a href="exam-mode.html">Exam Mode</a>
+    <a href="count-down.html">Countdown</a>
+  </nav>
+</header>
+
+<main class="resources-page">
+
+  <!-- FILTERS -->
+  <aside class="filters">
+    <h2>Filter Resources</h2>
+
+    <label>Subject</label>
+    <select id="subjectFilter">
+      <option value="all">All Subjects</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="Biology">Biology</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Physics">Physics</option>
+      <option value="English A">English A</option>
+      <option value="Geography">Geography</option>
+    </select>
+
+    <label>Type</label>
+    <select id="typeFilter">
+      <option value="all">All Types</option>
+      <option value="Textbook">Textbooks</option>
+      <option value="Past Paper">Past Papers</option>
+      <option value="SBA">SBAs</option>
+      <option value="Lab Manual">Lab Manuals</option>
+      <option value="Notes">Notes</option>
+      <option value="Video">Videos</option>
+    </select>
+  </aside>
+
+  <!-- RESOURCES -->
+  <section class="resources">
+    <h1>CSEC Study Resources</h1>
+    <div id="resourcesGrid"></div>
+  </section>
+
+</main>
+
+<script src="../js/resources.js"></script>
+</body>
+</html>

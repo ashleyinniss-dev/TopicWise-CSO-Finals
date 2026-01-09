@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TopicWise</title>
+
+  <!-- GLOBAL + PAGE CSS -->
+  <link rel="stylesheet" href="../CSS/main.css">
+  <link rel="stylesheet" href="../CSS/home-tab.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="brand">
+    <img src="../Buttons/logo.jpg" alt="TopicWise logo">
+    <span>TopicWise</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="home-tab.html" class="active">Home</a>
+    <a href="study-planner.html"> Study Planner</a>
+    <a href="exam-mode.html">Exam Mode</a>
+    <a href="resources.html">Resources</a>
+
+   
+  </nav>
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <img class="hero-bg" src="../Buttons/Header.jpg" alt="Caribbean flags">
+
+  <div class="hero-box">
+    <h1>Learning, Organised by Topic.</h1>
+    <p>
+      A Caribbean-focused study platform that helps students organise resources,
+      plan study time, and prepare smarter for CSEC.
+    </p>
+
+   <button id="getStartedBtn" class="primary-btn">Get Started</button>
+
+<!-- GET STARTED MODAL -->
+<div id="getStartedModal" class="modal hidden">
+  <div class="modal-card">
+    <h2>Let’s set up your subjects</h2>
+
+    <label>Select your subjects</label>
+    <select id="subjectSelect" multiple>
+      <option>Biology</option>
+      <option>Chemistry</option>
+      <option>Physics</option>
+      <option>Mathematics</option>
+      <option>English A</option>
+      <option>English B</option>
+    </select>
+
+    <div class="modal-actions">
+      <button id="cancelSetup" class="secondary-btn">Cancel</button>
+      <button id="continueSetup" class="primary-btn">Continue</button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/getStartedModal.js"></script>
+<script src="/css/main.css"></script>
+
+</script>
+</section>
+
+<!-- ================= CAROUSEL ================= -->
+<section class="carousel-section">
+  <button id="prevBtn" class="carousel-btn">‹</button>
+
+  <div class="carousel-viewport">
+    <div class="carousel-track">
+      <div class="card"><img src="../Flags/Anguilla.png"><p>Anguilla</p></div>
+      <div class="card"><img src="../Flags/Antigua and Barbuda.png"><p>Antigua & Barbuda</p></div>
+      <div class="card"><img src="../Flags/Bahamas.png"><p>Bahamas</p></div>
+      <div class="card"><img src="../Flags/Barbados.png"><p>Barbados</p></div>
+      <div class="card"><img src="../Flags/Belize.png"><p>Belize</p></div>
+      <div class="card"><img src="../Flags/Bermuda.png"><p>Bermuda</p></div>
+      <div class="card"><img src="../Flags/British Virgin Islands.png"><p>British Virgin Islands</p></div>
+      <div class="card"><img src="../Flags/Cayman Islands.png"><p>Cayman Islands</p></div>
+      <div class="card"><img src="../Flags/Dominica.png"><p>Dominica</p></div>
+      <div class="card"><img src="../Flags/Grenada.png"><p>Grenada</p></div>
+      <div class="card"><img src="../Flags/Guyana.png"><p>Guyana</p></div>
+      <div class="card"><img src="../Flags/Jamaica.png"><p>Jamaica</p></div>
+      <div class="card"><img src="../Flags/Montserrat.png"><p>Montserrat</p></div>
+      <div class="card"><img src="../Flags/Saint Kitts and Nevis.png"><p>Saint Kitts & Nevis</p></div>
+      <div class="card"><img src="../Flags/Saint Lucia.png"><p>Saint Lucia</p></div>
+      <div class="card"><img src="../Flags/Saint Vincent and the Grenadines.png"><p>Saint Vincent & the Grenadines</p></div>
+      <div class="card"><img src="../Flags/Turks and Caicos Islands.png"><p>Turks & Caicos Islands</p></div>
+      <div class="card"><img src="../Flags/Trinidad and Tobago.png"><p>Trinidad & Tobago</p></div>
+    </div>
+  </div>
+
+  <button id="nextBtn" class="carousel-btn">›</button>
+</section>
+
+<!-- ================= INFO ================= -->
+<section class="info-section">
+  <div class="info-container">
+
+    <div class="info-block">
+      <h2>What is TopicWise?</h2>
+      <p>
+        TopicWise organises Caribbean secondary school content by subject and
+        topic, making exam preparation structured and less stressful.
+      </p>
+    </div>
+
+    <div class="info-block">
+      <h2>The Problem</h2>
+      <p>
+        Students face scattered resources, poor time management, and limited
+        Caribbean-specific tools.
+      </p>
+    </div>
+
+    <div class="info-block">
+      <h2>Our Solution</h2>
+      <p>
+        TopicWise centralises learning materials, planners, and exam tools in
+        one intuitive platform.
+      </p>
+    </div>
+
+    <div class="info-block">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Topic-based resources</li>
+        <li>Study planner</li>
+        <li>Exam mode</li>
+        <li>Caribbean syllabus focus</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= GET STARTED MODAL ================= -->
+<div id="getStartedModal" class="modal hidden">
+  <div class="modal-box">
+
+    <button class="close-btn" onclick="closeModal()">×</button>
+
+    <div class="step active" id="step1">
+      <h2>Welcome</h2>
+      <p>Continue to set up your study planner</p>
+
+      <button class="primary-btn" onclick="goToStep(2)">
+        Continue
+      </button>
+    </div>
+
+    <div class="step" id="step2">
+      <h2>Select Subjects</h2>
+
+      <div class="subjects-container">
+        <label><input type="checkbox"> Mathematics</label>
+        <label><input type="checkbox"> Biology</label>
+        <label><input type="checkbox"> Chemistry</label>
+        <label><input type="checkbox"> Physics</label>
+        <label><input type="checkbox"> English A</label>
+      </div>
+
+      <button class="primary-btn" onclick="goToStudyPlanner()">
+        Go to Planner
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= JS ================= -->
+<script src="js/home-tab.js"></script>
+
+</body>
+</html>
