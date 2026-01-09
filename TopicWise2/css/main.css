@@ -18,7 +18,7 @@
   width: 380px;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  pointer-events: auto; /* VERY IMPORTANT */
+  pointer-events: auto; 
 }
 
 .modal-card h2 {
@@ -27,8 +27,8 @@
 
 .modal-card select {
   width: 100%;
-  height: 160px;        /* REQUIRED */
-  overflow-y: auto;     /* REQUIRED */
+  height: 160px;        
+  overflow-y: auto;     
   margin-top: 8px;
   border-radius: 8px;
 }
@@ -54,4 +54,5 @@
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
+
 }
