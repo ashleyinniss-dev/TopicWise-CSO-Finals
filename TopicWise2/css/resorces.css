@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL RESET
+   GLOBAL FONTS AND STUFF
 ========================= */
 * {
   margin: 0;
@@ -160,18 +160,17 @@ body {
 }
 
 /* =========================
-   OVERRIDE TEXT COLOR
+    TEXT COLOR TROUBLESHOOYT
 ========================= */
 
-/* Change select dropdown text to white */
 .filters select {
-  color: #ffffff; /* white text */
+  color: #ffffff; 
 }
 
-/* Change any black text inside resource cards to white */
 .resource-card, 
 .resource-card h3,
 .resource-card p,
 .resource-card span {
-  color: #ffffff; /* white text */
+  color: #ffffff; 
+
 }
