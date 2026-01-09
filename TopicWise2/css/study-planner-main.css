@@ -81,7 +81,7 @@ body {
 }
 
 .topics input[type="checkbox"] {
-  accent-color: #4f46e5; /* TopicWise purple */
+  accent-color: #4f46e5; 
   cursor: pointer;
 }
 
@@ -92,4 +92,5 @@ body {
 .topics span.done {
   text-decoration: line-through;
   color: #9ca3af;
+
 }
