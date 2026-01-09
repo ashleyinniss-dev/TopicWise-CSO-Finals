@@ -8,7 +8,7 @@ const timerDisplay = document.getElementById("timerDisplay");
 
 let timerInterval;
 
-// LOAD SUBJECTS FROM LOCAL STORAGE
+// LOCAL STORAGE
 const storedSubjects = JSON.parse(localStorage.getItem("selectedSubjects")) || [];
 
 storedSubjects.forEach(subject => {
@@ -18,7 +18,7 @@ storedSubjects.forEach(subject => {
   subjectSelect.appendChild(option);
 });
 
-// ENABLE PAPER SELECT
+//  PAPER SELECT
 subjectSelect.addEventListener("change", () => {
   paperSelect.disabled = !subjectSelect.value;
 });
@@ -59,4 +59,5 @@ function updateTimer(seconds) {
   const m = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
   const s = String(seconds % 60).padStart(2, "0");
   timerDisplay.textContent = `${h}:${m}:${s}`;
+
 }
