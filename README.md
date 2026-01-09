@@ -17,3 +17,5 @@ Built With
 How to Use
 
 Open home-tab.html in your browser and navigate through the site using the menu.
+
+NOTE: The website is not completed (resources need to be added) and animations are not finished as yet, these features will be completed in time for the 14th January, 2025 for the finals of the CSO Coding Olympiad! 
