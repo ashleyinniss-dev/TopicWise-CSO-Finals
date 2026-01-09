@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL RESET
+   GLOBAL FONTS AND STUFF
 ========================= */
 * {
   margin: 0;
@@ -129,7 +129,7 @@ body {
 }
 
 /* =========================
-   CAROUSEL SECTION
+   CAROUSEL 
 ========================= */
 .carousel-section {
   width: 100%;
@@ -201,7 +201,7 @@ body {
 }
 
 /* =========================
-   INFO SECTIONS
+   INFO STUFF
 ========================= */
 .info-section {
   padding: 80px 8%;
@@ -315,4 +315,5 @@ body {
     opacity: 1;
   }
 }
+
 
