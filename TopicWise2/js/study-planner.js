@@ -43,7 +43,7 @@ function setLevel(card, level) {
   card.classList.add(level);
 }
 
-/* SAVE AS IMAGE */
+/* SAVE IMAGE */
 document.getElementById("saveBtn").onclick = () => {
   html2canvas(document.getElementById("plannerCapture")).then(canvas => {
     const link = document.createElement("a");
@@ -51,4 +51,5 @@ document.getElementById("saveBtn").onclick = () => {
     link.href = canvas.toDataURL();
     link.click();
   });
+
 };
