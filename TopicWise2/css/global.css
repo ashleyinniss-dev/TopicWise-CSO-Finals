@@ -1,4 +1,4 @@
-/* GLOBAL RESET */
+/* GLOBAL FONTS AND STUFF */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 /* =====================
-   NAVBAR (ONLY HERE)
+   NAVBAR 
 ===================== */
 .site-header {
   display: flex;
@@ -65,4 +65,5 @@ body {
 .nav-links a:hover::after,
 .nav-links a.active::after {
   width: 100%;
+
 }
